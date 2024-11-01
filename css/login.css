@@ -1,0 +1,82 @@
+/* Apply full background image */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding-bottom:10px;
+    background-image: url("../img/igg.avif"); /* Make sure this path is correct */
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed; /* Keeps the background in place on scroll */
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    padding: 20px;
+   /* background-color: rgba(255, 255, 255, 0.9); Slight transparency */
+}
+
+header .logo {
+    max-width: 80px;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #4CAF50;
+    margin: 0;
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+header nav a {
+    color: #4CAF50;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1em;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main styling */
+main {
+    text-align: center;
+    padding: 50px 20px; /* Add padding for spacing without a box */
+    color: #333;
+}
+
+main h1 {
+    font-size: 2.5em;
+    color: #4CAF50;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+main h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+main p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Footer styling */
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    height: 10px;
+    position: fixed; /* Keeps the footer at the bottom */
+    width: 100%; /* Full-width footer */
+    bottom: 0; /* Anchors it to the bottom of the viewport */
+    font-size: 0.9em;
+}

@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopt a Pet - Imaginary Pet Shop</title>
+    <link rel="stylesheet" href="css/adoption.css">
+</head>
+<body>
+    <header>
+        <img src="img/image.logo.png" alt="Imaginary Pet Shop Logo" class="logo">
+        <h1>Imaginary Pet Shop</h1>
+        <nav>
+            <ul>
+                <li><a href="verification.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="welcome-title">Adopt a Pet</h1>
+        <section class="pet-gallery">
+              <!-- Pet 1 -->
+    <div class="pet-card">
+    <img src="img/gg (1).jpg" alt="Unicorn dog">
+    <h2>Unicorn</h2>
+    <button class="adopt-btn" onclick="adoptPet('Unicorn', 'img/gg (1).jpg')">Adopt</button>
+    </div>  
+        </section>
+
+        <!-- Adoption Confirmation Section -->
+        <section id="adoption-confirmation" class="hidden">
+            <h2>Congratulations!</h2>
+            <p id="adoption-message"></p>
+            <img id="adopted-pet-photo" src="" alt="Adopted Pet Photo">
+        </section>
+        <button onclick="location.assign('Anime2.html')">Adopt</button>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Imaginary Pet Shop. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Inline JavaScript to handle adoption functionality -->
+    <script>
+        function adoptPet(petName, petImage) {
+            // Display the adoption confirmation section
+            const confirmationSection = document.getElementById("adoption-confirmation");
+            confirmationSection.classList.remove("hidden");
+    
+            // Set the adoption message and image
+            const adoptionMessage = document.getElementById("adoption-message");
+            const adoptedPetPhoto = document.getElementById("adopted-pet-photo");
+    
+            adoptionMessage.textContent = `You have successfully adopted a ${petName}!`;
+            adoptedPetPhoto.src = petImage;
+        }
+    </script>
+</body>
+</html>

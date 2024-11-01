@@ -1,0 +1,72 @@
+VR PET
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imaginary Pet Shop</title>
+    <body style="background-image: url(''); background-size: cover;"></body>
+    <link rel="stylesheet" href="css/adoption.css">
+</head>
+<style>
+    body {
+        margin:5;
+    }
+    footer {
+        text-align: right; /* Aligns text to the right */
+        padding: 10px;
+        margin: 10px;
+        position: relative; /* Optional, for better positioning */
+    }
+</style>
+<body>
+    <header>
+        <img src="img/image.logo.png" alt="Imaginary Pet Shop Logo" class="logo">
+        <h1>Welcome to the Imaginary Pet Shop!</h1>
+        <nav>
+            <a href="login.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+<main>
+    <section id="welcome">
+        <h2>Adopt a Pet Like No Other!</h2>
+        <p>Discover mythical pets that are out of this world wholikes to be your friend....choose now!!</p>
+    </section>
+    <section id="featured-pets">
+        <h3>Featured Pets</h3>
+
+        <div class="pet" id="unicorn-dog">
+            <h4>Unicorn Dog</h4>
+            <p>A loyal, magical dog with a horn and lots of charm.</p>
+            <button onclick="location.assign('Adopt1.html')">Adopt</button>
+
+        </div>
+
+        <div class="pet" id="pocket-dragon">
+            <h4>Pocket-Sized Dragon</h4>
+            <p>A fiery companion small enough to fit in your pocket.</p>
+            <button onclick="location.assign('Adopt2.html')">Adopt</button>
+        </div>
+        
+        
+
+        <div class="pet" id="catty  clown fish">
+            <h4>Catty Fighter Fish</h4>
+            <p>beautiful as uu</p>
+            <button onclick="location.assign('Adopt3.html')">Adopt</button>
+        </div>
+    </section>
+
+    <section id="receipt" style="display: none;">
+        <h3>Your Adoption Receipt</h3>
+        <p id="receipt-text"></p>
+        <button onclick="printReceipt()">Print Receipt</button>
+    </section>
+</main>
+<footer>
+    @ 2024 Imaginary Pet Shop
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
